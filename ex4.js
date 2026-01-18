@@ -8,12 +8,12 @@ let input = +prompt(menu);
 
 while (input !== 4) {
   if (input === 1) {
-    console.log(balance);
+    console.log(`$${balance}`);
   } else if (input === 2) {
     let amount = +prompt("How much would you like to deposit? ");
     if (amount > 0) {
       balance += amount;
-      console.log(`You have successfully deposited ${amount}`);
+      console.log(`New balance: $${balance}`);
     } else {
       console.log("invalid operation!");
     }
@@ -21,7 +21,7 @@ while (input !== 4) {
     let amount = +prompt("How much would you like to withdraw? ");
     if (amount > 0 && amount <= balance) {
       balance -= amount;
-      console.log(`You have successfully withdrawn ${amount}`);
+      console.log(`New balance: $${balance}`);
     } else {
       console.log("invalid operation!");
     }
