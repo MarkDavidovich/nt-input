@@ -1,5 +1,7 @@
 {
+  
   "dependencies": {
+    "type": "module",
     "prompt-sync": "^4.2.0"
   }
 }
